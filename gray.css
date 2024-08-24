@@ -272,20 +272,3 @@ summary::marker {
 summary {
     cursor: pointer;
 }
-
-.mcsubdetails summary:after{
-    float: left;
-    content: "+";
-}
-
-.mcsubdetails details[open] summary:after{
-    content: "-";
-}
-
-.mcsubdetails summary::marker{
-    content: "";
-}
-
-.mcsubdetails summary{
-    cursor: pointer;
-}
