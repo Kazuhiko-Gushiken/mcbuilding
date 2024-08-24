@@ -266,7 +266,7 @@ details[open] summary:after {
     content: "-";
 }
 
-details details[open] summary:after {
+details .mcsubdetails[open] summary:after {
     content: "-";
 }
 
