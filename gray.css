@@ -257,16 +257,7 @@ summary:after {
     content: "+";
 }
 
-details summary:after {
-    float: left;
-    content: "+";
-}
-
 details[open] summary:after {
-    content: "-";
-}
-
-details .mcsubdetails[open] summary:after {
     content: "-";
 }
 
