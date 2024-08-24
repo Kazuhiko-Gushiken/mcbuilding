@@ -1,0 +1,258 @@
+@font-face {
+    font-family: Fira Code;
+    src: url(../assets/fonts/FiraCode-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(../assets/fonts/FiraCode-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(../assets/fonts/FiraCode-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(../assets/fonts/FiraCode-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(../assets/fonts/FiraCode-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Fira Code, monospace;
+    -webkit-font-smoothing: antialiased;
+    background-color: #1F2023;
+    color: #b0b0b0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+h1 {
+    color: #b4b4b4
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-regular {
+    font-weight: 400;
+}
+.font-light {
+    font-weight: 300;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+.h-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-s-space {
+    padding-bottom: 2vh;
+}
+
+.b-space {
+    padding-bottom: 5vh;
+}
+
+.b-b-space {
+    padding-bottom: 10vh;
+}
+
+.centerit {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-list {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    height: 60vh;
+    justify-content: space-evenly;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.c-item {
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    width: 30%;
+
+    scroll-snap-align: center;
+}
+
+.c-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    font-weight: 300;
+}
+
+.c-list-wrapper {
+    position:relative;
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.c-button {
+    position: absolute;
+    
+    top: 50%;
+
+    width: 3rem;
+    height: 3rem;
+    background-color: #333435;
+    border: none;
+    border-radius: 15px;
+    
+
+
+    transform: translateY(-50%);
+}
+
+.c-button--previous {
+    left: 1.5rem;
+    transform: translateY(-50%)rotate(180deg);
+}
+
+.c-button--next {
+    right: 1.5rem;
+}
+
+.c-item-picture {
+    position: relative;
+    margin-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.c-item-picture img {
+    width: 100%;
+    border-radius: 25px;
+    aspect-ratio: 3 / 4;
+    object-fit: fill;
+}
+.t-align {
+    height: 5vh;
+    text-align: center;
+}
+
+.c-button:disabled {
+    opacity: 0;
+    cursor: default;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+/* split */
+
+.mcdetails {
+    display: block;
+    width: 100%;
+    background: #1d1e20;
+    border: 4px solid;
+    border-color: #1b1c1d;
+    border-radius: 5px;
+    box-shadow: none;
+
+}
+
+.mcsummary {
+    text-align: center;
+    color: #b0b0b0;
+    font-family: Fira Code, monospace;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2vh;
+    font-weight: 600
+}
+
+summary:after {
+    float: left;
+    content: "+";
+}
+
+details[open] summary:after {
+    content: "-";
+}
+
+summary::marker {
+    content: "";
+}
+
+summary {
+    cursor: pointer;
+}
