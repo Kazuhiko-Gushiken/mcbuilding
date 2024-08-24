@@ -232,7 +232,8 @@ button:hover {
 }
 
 .mcsubdetails {
-   display: block;
+   display: flex;
+   align-items: center;
    width: 90%;
    background: #1d1e20;
    border: 4px solid;
