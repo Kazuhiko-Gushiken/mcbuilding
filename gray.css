@@ -268,3 +268,9 @@ summary::marker {
 summary {
     cursor: pointer;
 }
+
+footer {
+    text-align: center;
+    padding: 6px;
+    color: white;
+}
