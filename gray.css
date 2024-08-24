@@ -233,12 +233,12 @@ button:hover {
 
 .mcsubdetails {
    display: block;
-       width: 90%;
-       background: #1d1e20;
-       border: 4px solid;
-       border-color: #1b1c1d;
-       border-radius: 5px;
-       box-shadow: none;
+   width: 90%;
+   background: #1d1e20;
+   border: 4px solid;
+   border-color: #1b1c1d;
+   border-radius: 5px;
+   box-shadow: none;
 
 }
 
