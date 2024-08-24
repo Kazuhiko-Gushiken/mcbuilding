@@ -266,6 +266,10 @@ details[open] summary:after {
     content: "-";
 }
 
+details details[open] summary:after {
+    content: "-";
+}
+
 summary::marker {
     content: "";
 }
